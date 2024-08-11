@@ -66,7 +66,7 @@ public class SearchFlightPage extends ProjectSpacificationMethod{
 		PageFactory.initElements(driver, this);
 	}
 	
-	/*
+	
 	public PassengerDetailPage oneWaySearchFlight() {
 		wait.until(ExpectedConditions.elementToBeClickable(labelWelcomeElement));
 		wait.until(ExpectedConditions.elementToBeClickable(fromCityElement));
@@ -74,14 +74,13 @@ public class SearchFlightPage extends ProjectSpacificationMethod{
 		sendKeyElements(toCityElement,"Chennai");
 		clickElement(selectMonthElement);
 		try {
-			//clickElement(clickDateElement);
-		    sendKeyElements(selectDateElement,"5");
+			clickElement(clickDateElement);
 		}
 		catch(Exception ex){
 			
-			System.out.print("date slected exception");
+			System.out.print(" To date slected exception");
+			ex.printStackTrace();
 		}
-		
 		clickElement(searchFlightButtonElement);
 
 		wait.until(ExpectedConditions.elementToBeClickable(continueButtonElement));
@@ -90,12 +89,11 @@ public class SearchFlightPage extends ProjectSpacificationMethod{
 			try {
 		Thread.sleep(10000);
 	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	
 			return new PassengerDetailPage(driver);
-	}*/
+	}
 	
 	public PassengerDetailPage twoWaySearchFlight() {
 		wait.until(ExpectedConditions.elementToBeClickable(labelWelcomeElement));

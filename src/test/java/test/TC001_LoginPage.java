@@ -35,7 +35,7 @@ public class TC001_LoginPage extends ProjectSpacificationMethod {
 		 SearchFlightPage SearchFlightPageObject=new SearchFlightPage(driver);
 		 PassengerDetailPage passengerDetailObject=new PassengerDetailPage(driver);
 		 AddOnPage addOnPageObject=new AddOnPage(driver);
-		// SearchFlightPageObject.oneWaySearchFlight();
+		 SearchFlightPageObject.oneWaySearchFlight();
 		 passengerDetailObject.passengerDetailsValidation();
 		 addOnPageObject.AddOnPageValidation();
 	}
